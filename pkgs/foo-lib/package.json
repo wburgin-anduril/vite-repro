@@ -1,0 +1,12 @@
+{
+  "name": "foo-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "../../bazel build ."  
+  },
+  "author": "Walker Burgin <walkerburgin@gmail.com>",
+  "license": "ISC"
+}

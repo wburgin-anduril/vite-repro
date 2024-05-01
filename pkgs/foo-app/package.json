@@ -1,0 +1,14 @@
+{
+  "name": "foo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "../../bazel build ."
+  },
+  "dependencies": {
+    "foo-lib": "workspace:*"
+  },
+  "author": "Walker Burgin <walkerburgin@gmail.com>",
+  "license": "ISC"
+}
