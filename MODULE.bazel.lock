@@ -2345,7 +2345,7 @@
       "general": {
         "bzlTransitiveDigest": "FLzeFy+sziyCkYTZTsv/y4Hw+b5ZgI0z+w/goviHA7c=",
         "recordedFileInputs": {
-          "@@//pnpm-lock.yaml": "855ecfe1f3ece0823065834f1b89387df6147e495a587c5b30e7115df170d1e3",
+          "@@//pnpm-lock.yaml": "da6a0eb64306dd73ae04b3fb5165e0e9afae4472b2c85c479ef47d5c8e34f070",
           "@@//.npmrc": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
           "@@aspect_bazel_lib~~toolchains~yq_darwin_arm64//yq": "db8c11ca4c1dda8fe7c211e82e28191d48bd9ae83471b952003e819de79bcb51"
         },
@@ -2611,6 +2611,34 @@
               "link_packages": {},
               "integrity": "sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==",
               "url": "https://registry.npmjs.org/postcss/-/postcss-8.4.38.tgz",
+              "commit": "",
+              "patch_args": [],
+              "patches": [],
+              "custom_postinstall": "",
+              "npm_auth": "",
+              "npm_auth_basic": "",
+              "npm_auth_username": "",
+              "npm_auth_password": "",
+              "lifecycle_hooks": [],
+              "extra_build_content": "",
+              "generate_bzl_library_targets": false
+            }
+          },
+          "npm__at_bazel_ibazel__0.25.0": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_rule",
+            "attributes": {
+              "package": "@bazel/ibazel",
+              "version": "0.25.0",
+              "root_package": "",
+              "link_workspace": "",
+              "link_packages": {
+                "": [
+                  "@bazel/ibazel"
+                ]
+              },
+              "integrity": "sha512-dtosfsuZCSaqlUe5EyxNdaN7Gow0Y+ZJixdlciytcSieUcB/1lXPFTx6OihxhjgtTHkeFovlQ/QbvArRPnk+nQ==",
+              "url": "https://registry.npmjs.org/@bazel/ibazel/-/ibazel-0.25.0.tgz",
               "commit": "",
               "patch_args": [],
               "patches": [],
@@ -3781,6 +3809,34 @@
               ]
             }
           },
+          "npm__at_bazel_bazelisk__1.19.0": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_rule",
+            "attributes": {
+              "package": "@bazel/bazelisk",
+              "version": "1.19.0",
+              "root_package": "",
+              "link_workspace": "",
+              "link_packages": {
+                "": [
+                  "@bazel/bazelisk"
+                ]
+              },
+              "integrity": "sha512-8PyRGRj/CN286IFHVILgYZ2lQ/JvgQ25ZEgoUAkpSnGmbPdQnKyHtTGEG+Sf0AISFqP5+PPzN162DcizZ/bR9w==",
+              "url": "https://registry.npmjs.org/@bazel/bazelisk/-/bazelisk-1.19.0.tgz",
+              "commit": "",
+              "patch_args": [],
+              "patches": [],
+              "custom_postinstall": "",
+              "npm_auth": "",
+              "npm_auth_basic": "",
+              "npm_auth_username": "",
+              "npm_auth_password": "",
+              "lifecycle_hooks": [],
+              "extra_build_content": "",
+              "generate_bzl_library_targets": false
+            }
+          },
           "npm__at_esbuild_linux-ppc64__0.20.2": {
             "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
             "ruleClassName": "npm_import_rule",
@@ -3863,6 +3919,35 @@
               ],
               "extra_build_content": "",
               "generate_bzl_library_targets": false
+            }
+          },
+          "npm__at_bazel_bazelisk__1.19.0__links": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_links",
+            "attributes": {
+              "package": "@bazel/bazelisk",
+              "version": "1.19.0",
+              "dev": true,
+              "root_package": "",
+              "link_packages": {
+                "": [
+                  "@bazel/bazelisk"
+                ]
+              },
+              "deps": {},
+              "transitive_closure": {
+                "@bazel/bazelisk": [
+                  "1.19.0"
+                ]
+              },
+              "lifecycle_build_target": false,
+              "lifecycle_hooks_env": [],
+              "lifecycle_hooks_execution_requirements": [],
+              "bins": {},
+              "npm_translate_lock_repo": "npm",
+              "package_visibility": [
+                "//visibility:public"
+              ]
             }
           },
           "npm__at_esbuild_linux-ppc64__0.20.2__links": {
@@ -4436,6 +4521,35 @@
               "lifecycle_hooks_execution_requirements": [
                 "no-sandbox"
               ],
+              "bins": {},
+              "npm_translate_lock_repo": "npm",
+              "package_visibility": [
+                "//visibility:public"
+              ]
+            }
+          },
+          "npm__at_bazel_ibazel__0.25.0__links": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_links",
+            "attributes": {
+              "package": "@bazel/ibazel",
+              "version": "0.25.0",
+              "dev": true,
+              "root_package": "",
+              "link_packages": {
+                "": [
+                  "@bazel/ibazel"
+                ]
+              },
+              "deps": {},
+              "transitive_closure": {
+                "@bazel/ibazel": [
+                  "0.25.0"
+                ]
+              },
+              "lifecycle_build_target": false,
+              "lifecycle_hooks_env": [],
+              "lifecycle_hooks_execution_requirements": [],
               "bins": {},
               "npm_translate_lock_repo": "npm",
               "package_visibility": [

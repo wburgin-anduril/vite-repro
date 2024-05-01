@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@bazel/bazelisk':
+        specifier: ^1.19.0
+        version: 1.19.0
+      '@bazel/ibazel':
+        specifier: ^0.25.0
+        version: 0.25.0
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -24,6 +30,16 @@ importers:
   pkgs/foo-lib: {}
 
 packages:
+
+  /@bazel/bazelisk@1.19.0:
+    resolution: {integrity: sha512-8PyRGRj/CN286IFHVILgYZ2lQ/JvgQ25ZEgoUAkpSnGmbPdQnKyHtTGEG+Sf0AISFqP5+PPzN162DcizZ/bR9w==}
+    hasBin: true
+    dev: true
+
+  /@bazel/ibazel@0.25.0:
+    resolution: {integrity: sha512-dtosfsuZCSaqlUe5EyxNdaN7Gow0Y+ZJixdlciytcSieUcB/1lXPFTx6OihxhjgtTHkeFovlQ/QbvArRPnk+nQ==}
+    hasBin: true
+    dev: true
 
   /@esbuild/aix-ppc64@0.20.2:
     resolution: {integrity: sha512-D+EBOJHXdNZcLJRBkhENNG8Wji2kgc9AZ9KiPr1JuZjsNtyHzrsfLRrY0tk2H2aoFu6RANO1y1iPPUCDYWkb5g==}

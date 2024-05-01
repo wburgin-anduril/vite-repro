@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "../../bazel build ."
+    "build": "../../bazel build .",
+    "dev": "../../ibazel run dev"
   },
   "dependencies": {
     "@monorepo/foo-lib": "workspace:*"
