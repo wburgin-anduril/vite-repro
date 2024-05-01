@@ -14,5 +14,10 @@
   "scripts": {
     "build": "./bazel build //pkgs/foo-app",
     "dev": "./ibazel run //pkgs/foo-app:dev"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "vite@5.2.10": "patches/vite@5.2.10.patch"
+    }
   }
 }

@@ -1,0 +1,26 @@
+diff --git a/dist/node/chunks/dep-DkOS1hkm.js b/dist/node/chunks/dep-DkOS1hkm.js
+index 8eb480fd35df776e5d9309d6c17058ac33473657..47b20fcbbb79d0537b0e0d483cb5abd4d06a41bd 100644
+--- a/dist/node/chunks/dep-DkOS1hkm.js
++++ b/dist/node/chunks/dep-DkOS1hkm.js
+@@ -12195,7 +12195,7 @@ function isNodeBuiltin(id) {
+     return nodeBuiltins.includes(id);
+ }
+ function isInNodeModules$1(id) {
+-    return id.includes('node_modules');
++    return id.includes('node_modules') && !id.includes("@monorepo/");
+ }
+ function moduleListContains(moduleList, id) {
+     return moduleList?.some((m) => m === id || id.startsWith(withTrailingSlash(m)));
+diff --git a/dist/node-cjs/publicUtils.cjs b/dist/node-cjs/publicUtils.cjs
+index 58045998fc6aeaf9e5fc5d7ef16c6c0e776ffcdb..990f6aa058bcd5d076be6afdbc52b7aaeab0ea16 100644
+--- a/dist/node-cjs/publicUtils.cjs
++++ b/dist/node-cjs/publicUtils.cjs
+@@ -3369,7 +3369,7 @@ const createFilter = createFilter$1;
+ // Some runtimes like Bun injects namespaced modules here, which is not a node builtin
+ node_module.builtinModules.filter((id) => !id.includes(':'));
+ function isInNodeModules(id) {
+-    return id.includes('node_modules');
++    return id.includes('node_modules') && !id.includes("@monorepo/");
+ }
+ // TODO: use import()
+ const _require = node_module.createRequire((typeof document === 'undefined' ? require('u' + 'rl').pathToFileURL(__filename).href : (_documentCurrentScript && _documentCurrentScript.src || new URL('node-cjs/publicUtils.cjs', document.baseURI).href)));

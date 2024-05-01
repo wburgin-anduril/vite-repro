@@ -2345,7 +2345,7 @@
       "general": {
         "bzlTransitiveDigest": "FLzeFy+sziyCkYTZTsv/y4Hw+b5ZgI0z+w/goviHA7c=",
         "recordedFileInputs": {
-          "@@//pnpm-lock.yaml": "da6a0eb64306dd73ae04b3fb5165e0e9afae4472b2c85c479ef47d5c8e34f070",
+          "@@//pnpm-lock.yaml": "9576ad34e26561151c514e75c5ce830197d80bf65e03461a68bf82a6a091030e",
           "@@//.npmrc": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
           "@@aspect_bazel_lib~~toolchains~yq_darwin_arm64//yq": "db8c11ca4c1dda8fe7c211e82e28191d48bd9ae83471b952003e819de79bcb51"
         },
@@ -3617,6 +3617,38 @@
               "generate_bzl_library_targets": false
             }
           },
+          "npm__vite__5.2.10__1532928898": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_rule",
+            "attributes": {
+              "package": "vite",
+              "version": "5.2.10_1532928898",
+              "root_package": "",
+              "link_workspace": "",
+              "link_packages": {
+                "": [
+                  "vite"
+                ]
+              },
+              "integrity": "sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==",
+              "url": "https://registry.npmjs.org/vite/-/vite-5.2.10.tgz",
+              "commit": "",
+              "patch_args": [
+                "-p1"
+              ],
+              "patches": [
+                "@@//:patches/vite@5.2.10.patch"
+              ],
+              "custom_postinstall": "",
+              "npm_auth": "",
+              "npm_auth_basic": "",
+              "npm_auth_username": "",
+              "npm_auth_password": "",
+              "lifecycle_hooks": [],
+              "extra_build_content": "",
+              "generate_bzl_library_targets": false
+            }
+          },
           "npm__at_esbuild_linux-loong64__0.20.2__links": {
             "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
             "ruleClassName": "npm_import_links",
@@ -3750,34 +3782,6 @@
                 "install",
                 "postinstall"
               ],
-              "extra_build_content": "",
-              "generate_bzl_library_targets": false
-            }
-          },
-          "npm__vite__5.2.10": {
-            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
-            "ruleClassName": "npm_import_rule",
-            "attributes": {
-              "package": "vite",
-              "version": "5.2.10",
-              "root_package": "",
-              "link_workspace": "",
-              "link_packages": {
-                "": [
-                  "vite"
-                ]
-              },
-              "integrity": "sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==",
-              "url": "https://registry.npmjs.org/vite/-/vite-5.2.10.tgz",
-              "commit": "",
-              "patch_args": [],
-              "patches": [],
-              "custom_postinstall": "",
-              "npm_auth": "",
-              "npm_auth_basic": "",
-              "npm_auth_username": "",
-              "npm_auth_password": "",
-              "lifecycle_hooks": [],
               "extra_build_content": "",
               "generate_bzl_library_targets": false
             }
@@ -4191,12 +4195,91 @@
               ]
             }
           },
-          "npm__vite__5.2.10__links": {
+          "npm__rollup__4.17.2": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_rule",
+            "attributes": {
+              "package": "rollup",
+              "version": "4.17.2",
+              "root_package": "",
+              "link_workspace": "",
+              "link_packages": {},
+              "integrity": "sha512-/9ClTJPByC0U4zNLowV1tMBe8yMEAxewtR3cUNX5BoEpGH3dQEWpJLr6CLp0fPdYRF/fzVOgvDb1zXuakwF5kQ==",
+              "url": "https://registry.npmjs.org/rollup/-/rollup-4.17.2.tgz",
+              "commit": "",
+              "patch_args": [],
+              "patches": [],
+              "custom_postinstall": "",
+              "npm_auth": "",
+              "npm_auth_basic": "",
+              "npm_auth_username": "",
+              "npm_auth_password": "",
+              "lifecycle_hooks": [],
+              "extra_build_content": "",
+              "generate_bzl_library_targets": false
+            }
+          },
+          "npm__at_esbuild_win32-arm64__0.20.2__links": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_links",
+            "attributes": {
+              "package": "@esbuild/win32-arm64",
+              "version": "0.20.2",
+              "dev": true,
+              "root_package": "",
+              "link_packages": {},
+              "deps": {},
+              "transitive_closure": {
+                "@esbuild/win32-arm64": [
+                  "0.20.2"
+                ]
+              },
+              "lifecycle_build_target": true,
+              "lifecycle_hooks_env": [],
+              "lifecycle_hooks_execution_requirements": [
+                "no-sandbox"
+              ],
+              "bins": {},
+              "npm_translate_lock_repo": "npm",
+              "package_visibility": [
+                "//visibility:public"
+              ]
+            }
+          },
+          "npm__at_rollup_rollup-linux-arm64-gnu__4.17.2": {
+            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
+            "ruleClassName": "npm_import_rule",
+            "attributes": {
+              "package": "@rollup/rollup-linux-arm64-gnu",
+              "version": "4.17.2",
+              "root_package": "",
+              "link_workspace": "",
+              "link_packages": {},
+              "integrity": "sha512-EMMPHkiCRtE8Wdk3Qhtciq6BndLtstqZIroHiiGzB3C5LDJmIZcSzVtLRbwuXuUft1Cnv+9fxuDtDxz3k3EW2A==",
+              "url": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.17.2.tgz",
+              "commit": "",
+              "patch_args": [],
+              "patches": [],
+              "custom_postinstall": "",
+              "npm_auth": "",
+              "npm_auth_basic": "",
+              "npm_auth_username": "",
+              "npm_auth_password": "",
+              "lifecycle_hooks": [
+                "preinstall",
+                "install",
+                "postinstall"
+              ],
+              "extra_build_content": "",
+              "generate_bzl_library_targets": false
+            }
+          },
+          "npm__vite__5.2.10__1532928898__links": {
             "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
             "ruleClassName": "npm_import_links",
             "attributes": {
               "package": "vite",
-              "version": "5.2.10",
+              "version": "5.2.10_1532928898",
               "dev": true,
               "root_package": "",
               "link_packages": {
@@ -4353,7 +4436,7 @@
                   "1.2.0"
                 ],
                 "vite": [
-                  "5.2.10"
+                  "5.2.10_1532928898"
                 ]
               },
               "lifecycle_build_target": false,
@@ -4364,85 +4447,6 @@
               "package_visibility": [
                 "//visibility:public"
               ]
-            }
-          },
-          "npm__rollup__4.17.2": {
-            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
-            "ruleClassName": "npm_import_rule",
-            "attributes": {
-              "package": "rollup",
-              "version": "4.17.2",
-              "root_package": "",
-              "link_workspace": "",
-              "link_packages": {},
-              "integrity": "sha512-/9ClTJPByC0U4zNLowV1tMBe8yMEAxewtR3cUNX5BoEpGH3dQEWpJLr6CLp0fPdYRF/fzVOgvDb1zXuakwF5kQ==",
-              "url": "https://registry.npmjs.org/rollup/-/rollup-4.17.2.tgz",
-              "commit": "",
-              "patch_args": [],
-              "patches": [],
-              "custom_postinstall": "",
-              "npm_auth": "",
-              "npm_auth_basic": "",
-              "npm_auth_username": "",
-              "npm_auth_password": "",
-              "lifecycle_hooks": [],
-              "extra_build_content": "",
-              "generate_bzl_library_targets": false
-            }
-          },
-          "npm__at_esbuild_win32-arm64__0.20.2__links": {
-            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
-            "ruleClassName": "npm_import_links",
-            "attributes": {
-              "package": "@esbuild/win32-arm64",
-              "version": "0.20.2",
-              "dev": true,
-              "root_package": "",
-              "link_packages": {},
-              "deps": {},
-              "transitive_closure": {
-                "@esbuild/win32-arm64": [
-                  "0.20.2"
-                ]
-              },
-              "lifecycle_build_target": true,
-              "lifecycle_hooks_env": [],
-              "lifecycle_hooks_execution_requirements": [
-                "no-sandbox"
-              ],
-              "bins": {},
-              "npm_translate_lock_repo": "npm",
-              "package_visibility": [
-                "//visibility:public"
-              ]
-            }
-          },
-          "npm__at_rollup_rollup-linux-arm64-gnu__4.17.2": {
-            "bzlFile": "@@aspect_rules_js~//npm/private:npm_import.bzl",
-            "ruleClassName": "npm_import_rule",
-            "attributes": {
-              "package": "@rollup/rollup-linux-arm64-gnu",
-              "version": "4.17.2",
-              "root_package": "",
-              "link_workspace": "",
-              "link_packages": {},
-              "integrity": "sha512-EMMPHkiCRtE8Wdk3Qhtciq6BndLtstqZIroHiiGzB3C5LDJmIZcSzVtLRbwuXuUft1Cnv+9fxuDtDxz3k3EW2A==",
-              "url": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.17.2.tgz",
-              "commit": "",
-              "patch_args": [],
-              "patches": [],
-              "custom_postinstall": "",
-              "npm_auth": "",
-              "npm_auth_basic": "",
-              "npm_auth_username": "",
-              "npm_auth_password": "",
-              "lifecycle_hooks": [
-                "preinstall",
-                "install",
-                "postinstall"
-              ],
-              "extra_build_content": "",
-              "generate_bzl_library_targets": false
             }
           },
           "npm__at_esbuild_netbsd-x64__0.20.2": {
