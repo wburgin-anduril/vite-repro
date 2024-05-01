@@ -14,3 +14,14 @@ On the `master` branch:
 On the `patched` branch:
 + Run `pnpm dev` and observe that there are no errors in the console and that the page works again
 + Check out `patches/vite@5.2.10.patch` to see how Vite was patched on this branch
+
+On the `pnpm-dependencies-injected` branch:
++ Run `pnpm` to intall dependencies
++ Run `pnpm dev` and observe the errors in the console
+  ![Screenshot](screenshots/screenshot-3.png)
++ Take a look at how PNPM links `@monorepo/foo-lib` into `@monorepo/foo-app` in this configuration:
+  ```
+  ➜  vite-repro ✗ pushd pkgs/foo-app  
+  ➜  foo-app ✗ node -e 'console.log(require.resolve("@monorepo/foo-lib"))'
+  /Users/wburgin/Repositories/wburgin-anduril/vite-repro/node_modules/.pnpm/file+pkgs+foo-lib/node_modules/@monorepo/foo-lib/dist/index.js
+  ```
