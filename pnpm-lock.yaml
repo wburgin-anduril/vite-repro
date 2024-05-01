@@ -19,9 +19,23 @@ importers:
     dependencies:
       '@monorepo/foo-lib':
         specifier: workspace:*
-        version: link:../foo-lib
+        version: file:pkgs/foo-lib
+    devDependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.10
+        version: 5.2.10
+    dependenciesMeta:
+      '@monorepo/foo-lib':
+        injected: true
 
-  pkgs/foo-lib: {}
+  pkgs/foo-lib:
+    devDependencies:
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
 
 packages:
 
@@ -493,3 +507,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  file:pkgs/foo-lib:
+    resolution: {directory: pkgs/foo-lib, type: directory}
+    name: '@monorepo/foo-lib'
+    dev: false

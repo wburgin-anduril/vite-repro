@@ -10,7 +10,7 @@
     "vite": "^5.2.10"
   },
   "scripts": {
-    "build": "",
-    "dev": ""
+    "build": "pnpm --filter ./pkgs/foo-lib run build && pnpm --filter ./pkgs/foo-app run build",
+    "dev": "pnpm --filter ./pkgs/foo-lib run build && pnpm --filter ./pkgs/foo-app run dev"
   }
 }

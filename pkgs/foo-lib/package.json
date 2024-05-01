@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "../../bazel build ."  
+    "build": "rm -rf dist && tsc -p tsconfig.json --outDir dist && cp ./src/*.glsl dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   },
   "author": "Walker Burgin <walkerburgin@gmail.com>"
 }

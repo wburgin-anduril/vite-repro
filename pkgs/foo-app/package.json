@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "../../bazel build .",
-    "dev": "../../ibazel run dev"
+    "build": "rm -rf build/ts && tsc -p tsconfig.json --outDir build/ts && vite build --config vite.config.js -m production --outDir dist",
+    "dev": "tsc -p tsconfig.json --outDir build/ts && vite --config vite.config.js"
   },
   "dependencies": {
     "@monorepo/foo-lib": "workspace:*"
+  },
+  "dependenciesMeta": {
+    "@monorepo/foo-lib": {
+      "injected": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
   },
   "author": "Walker Burgin <walkerburgin@gmail.com>"
 }
