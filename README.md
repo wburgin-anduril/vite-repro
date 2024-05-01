@@ -12,5 +12,5 @@ On the `master` branch:
   ![Screenshot](screenshots/screenshot-2.png)
 
 On the `patched` branch:
-+ Run `pnpm dev` and observe that there are no errors in the console and that the page works
-+ Open `patches/vite@5.2.10.patch` to see how Vite was patched on this branch
++ Run `pnpm dev` and observe that there are no errors in the console and that the page works again
++ Check out `patches/vite@5.2.10.patch` to see how Vite was patched on this branch
