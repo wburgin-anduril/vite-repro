@@ -1,5 +1,4 @@
-import msg from "./message.txt?raw";
+import vertexShader from "./vertexShader.glsl?raw";
+import fragmentShader from "./fragmentShader.glsl?raw";
 
-export function helloWorld() {
-    console.log(msg);
-}
+export { vertexShader, fragmentShader };

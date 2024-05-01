@@ -7,7 +7,7 @@ npm_link_all_packages(name = "node_modules")
 ts_project(
     name = "dist",
     srcs = glob(["src/**"]),
-    assets = glob(["**/*.txt"]),
+    assets = glob(["**/*.glsl"]),
     declaration = True,
     out_dir = "dist",
     root_dir = "src",

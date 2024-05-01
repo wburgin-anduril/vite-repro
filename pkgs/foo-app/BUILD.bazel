@@ -10,6 +10,7 @@ ts_project(
     root_dir = "src",
     validate = False,
     srcs = glob(["src/**"]),
+    assets = glob(["src/**/*.css"]),
     deps = [":node_modules", "//:node_modules"],
     declaration = True,
     out_dir = "build/ts",
@@ -31,6 +32,21 @@ vite_bin.vite(
     },
     out_dirs = ["dist"],
     silent_on_success = False,
+    visibility = ["//visibility:public"],
+)
+
+vite_bin.vite_binary(
+    name = "dev",
+    data = ["package.json", ":typescript", "vite.config.js", "index.html"],
+    chdir = package_name(),
+    args = [
+        "--config",
+        "vite.config.js",
+        "--force",
+    ],
+    env = {
+        "FORCE_COLOR": "1",
+    },
     visibility = ["//visibility:public"],
 )
 
