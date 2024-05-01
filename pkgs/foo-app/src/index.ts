@@ -1,4 +1,4 @@
-import { vertexShader, fragmentShader } from "foo-lib";
+import { vertexShader, fragmentShader } from "@monorepo/foo-lib";
 
 const vertexShaderEl = document.createElement("pre");
 vertexShaderEl.innerText = vertexShader;

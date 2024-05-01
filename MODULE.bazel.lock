@@ -2345,7 +2345,7 @@
       "general": {
         "bzlTransitiveDigest": "FLzeFy+sziyCkYTZTsv/y4Hw+b5ZgI0z+w/goviHA7c=",
         "recordedFileInputs": {
-          "@@//pnpm-lock.yaml": "97b67ad74249de89f1ab757326fa9aca30c6338f0a4cff7091c5bbc968767d57",
+          "@@//pnpm-lock.yaml": "855ecfe1f3ece0823065834f1b89387df6147e495a587c5b30e7115df170d1e3",
           "@@//.npmrc": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
           "@@aspect_bazel_lib~~toolchains~yq_darwin_arm64//yq": "db8c11ca4c1dda8fe7c211e82e28191d48bd9ae83471b952003e819de79bcb51"
         },

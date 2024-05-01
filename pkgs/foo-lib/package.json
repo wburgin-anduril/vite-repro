@@ -1,5 +1,5 @@
 {
-  "name": "foo-lib",
+  "name": "@monorepo/foo-lib",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -7,6 +7,5 @@
   "scripts": {
     "build": "../../bazel build ."  
   },
-  "author": "Walker Burgin <walkerburgin@gmail.com>",
-  "license": "ISC"
+  "author": "Walker Burgin <walkerburgin@gmail.com>"
 }

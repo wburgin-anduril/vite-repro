@@ -17,7 +17,7 @@ importers:
 
   pkgs/foo-app:
     dependencies:
-      foo-lib:
+      '@monorepo/foo-lib':
         specifier: workspace:*
         version: link:../foo-lib
 
