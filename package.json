@@ -10,5 +10,9 @@
     "@bazel/ibazel": "^0.25.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"
+  },
+  "scripts": {
+    "build": "./bazel build //pkgs/foo-app",
+    "dev": "./ibazel run //pkgs/foo-app:dev"
   }
 }
